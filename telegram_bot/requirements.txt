@@ -1,0 +1,4 @@
+flake8
+python-dotenv
+python-telegram-bot
+requests

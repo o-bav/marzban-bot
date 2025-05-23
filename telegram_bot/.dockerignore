@@ -1,0 +1,40 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+
+# Git files
+.git/
+.gitignore
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Secrets - should be passed via environment variables at runtime
+.env
+*.env.*
+!.env.example
+
+# Docker files
+Dockerfile
+.dockerignore
+
+# Documentation / Other
+README.md
+SHM_API_INTERACTIONS.md
+*.md
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace

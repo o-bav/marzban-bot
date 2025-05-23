@@ -1,0 +1,8 @@
+[flake8]
+max-line-length = 100
+extend-ignore = 
+    E203
+# E203 is for whitespace before ':' - often conflicts with Black formatting.
+# Example: exclude = .git,__pycache__,old,build,dist,venv,.venv,env,.env
+# The 'exclude' is often useful but Flake8 default excludes are usually good.
+# We can refine this later if specific files cause issues.
