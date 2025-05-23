@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  shm-python-bot:
+    build: ./python_shm_bot
+    restart: unless-stopped
+    env_file:
+      - ./python_shm_bot/.env
+    # If the bot needed to expose any ports, that would be defined here,
+    # but typical Telegram bots using polling do not require exposing ports.
+    # volumes:
+    #   - ./python_shm_bot:/app # Optional: for development to sync code changes without rebuilding
+                                # Not recommended for production images.
+                                # The Dockerfile already copies the code.
